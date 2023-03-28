@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Dev Workshop</title>
+  </head>
+  <body style="padding: 50px; font-family: 'Monsterrat' sans-serif; background-color: #EAF6F6;">
+    <main>
+      <h1 style="text-align: center; line-height: 2;
+      font-size: 5.625rem;
+      margin: 2.6rem, auto, 0, auto;
+      font-family: 'Sacramento'">Web Dev Workshop</h1>
+      <h2 style="text-align: center;">Personal Website</h2>
+      <div style="font-size: 1.5rem;
+      font-weight: normal;
+      font-family: 'Montserrat', sans-serif;
+      padding: 10px;">
+      <h3>Getting Started:</h3>
+      <p style="padding: 50px">If you have experience coding, go ahead and open up your preferred text editor. 
+        For those without coding experience, look up <strong><a href="https://replit.com/">replit.com</a></strong>
+        on a search engine. Create an account if you do not have one already. Now we can create a repl. When prompted
+        for a search engine, type <strong>HTML, CSS, JS</strong>. This should auto generate three files for us.
+      </p>
+      <h3>HTML</h3>
+      <div style="padding: 50px">
+      <p>
+        HTML (Hypertext Markup Language) is a markup language used for creating
+        web pages and applications. It allows developers to structure content on
+        a web page by using various elements such as headings, paragraphs,
+        lists, images, and links. HTML provides the basic structure of a web
+        page and determines how the content should be displayed in a browser. It
+        consists of tags enclosed in angle brackets that indicate what type of
+        content is enclosed within them.
+      </p>
+      <p>If you're following along through a text editor, start by creating an HTML file: index.html. 
+        View your file with a live server to see our web page change as we progress!
+      </p>
+      <p>
+        Create a DOCTYPE(if you are using VS Code you can simply type "!" and hit
+        tab. If not google "HTML doctype" and copy and paste. <strong>This is already in 
+            the index.html file for people using replit.</strong>
+      </p>
+      <p>Edit the title of your site by editing the title tag in the head of the file.</p>
+      <p>
+        Now in the scope of the body tag, create a heading using the <code>&lth1&gt</code> 
+        which is known as the header tag and put your name in the contents.
+      </p>
+      <code style="margin-left: 100px;">&lth1&gtYour name&lt/h1&gt</code>
+      <p>
+        Create a paragraph using the <code>&ltp&gt tag</code> tag and add a few defining words
+        about yourself.
+      </p>
+      <code style="margin-left:100px">&ltp&gtStudent and Future Occupation&lt/p&gt</code>
+      <p>Create another paragraph and add a sentence about yourself</p>
+      <p>
+        <code style="margin-left: 100px;">
+        &ltp&gtI am a student at Swarthmore College and an aspiring occupation.&ltp&gt
+        </code>
+      </p>
+      <p>
+        Now create a <code>&lthr&gt</code> to provide more structure to the page. Notice that
+        the horizontal rule tag does not have a closing tag.
+      </p>
+      <p>
+        Let's now create another header but using the <code>&lth3&gt</code> tag instead this
+        time and put "Education" in between the tags.
+      </p>
+      <p>
+        We will now create a list using the <code>&ltul&gt tag</code>. To create a list item,
+        enter the scope of your <code>&ltul&gt</code> tag and create a <code>&ltli&gt</code>. For each
+        item of your list create a new <code>&ltli&gt</code>.
+      </p>
+      <code style="margin-left: 100px;">
+        &ltul&gt 
+        <p style="margin-left: 100px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gtHighschool at SECA&lt/li&gt</p> 
+        <p style="margin-left: 100px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ltli&gtCurrently enrolled at Swarthmore&ltli&gt</p>
+        <p style="margin-left: 100px;">&lt/ul&gt</p>
+      </p>
+      </code>
+      <p>Create another subsection but this time for Work Experience. Each time we create a subsection, 
+        use a horizontal rule to separate the content of your web page.
+      </p>
+      <h3>CSS</h3>
+      <p>
+        CSS (Cascading Style Sheets) is a style sheet language used to describe the presentation of a 
+        document written in HTML. It provides a way for developers to define the visual appearance of 
+        elements on a web page, including layout, colors, fonts, and sizes. By separating the presentation 
+        of a web page from its content, CSS allows developers to make changes to the layout and appearance 
+        of a web page without changing the underlying HTML code. CSS is written using a set of rules that define 
+        the style of an element, which are then applied to the appropriate HTML elements. The latest version of 
+        CSS is CSS3, which has introduced many new features such as animations, gradients, and transitions.
+    </p>
+    <p>Their are many ways to add styling to a website. Some websites have separate files which have styling instructions 
+        that can be applied to tags. We will use in-line tagging for the sake of simplicity. This is an example of in-line styling:
+    </p>
+    <code style="margin-left: 100px;">&lthr size="3"&gt</code>
+    <p>The styling for this horizontal rule is pretty straightforward. An important note is that the styling for this
+        tag will not apply to any other horizontal tags.
+    </p>
+    <p>When using in-line styling, we can omit the style attribute if the styling isn't CSS styling. Changing the size of our 
+        horizontal rule isn't specific to CSS.
+    </p>
+    <p> Add the following in-line styling to your <code>&lthr style=&gt</code> tag</p>
+    <p><code style="margin-left: 100px;">
+        border-style: none; border-top-style: dotted; border-color: gray; 
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border-width: 5px; width: 5%;
+        </code>
+    </p>
+    <p>If you want to change the background color of your website, add in-line styling to your <code>&ltbody color:40514E&gt</code></p>
+    <p>Because of how the HTML has been structured, the body of the web page lies within the body tag limiting our styling options.
+        A good way of thinking about modern web development is as a collection of rectangles which are created by the <code>&ltdiv&gt</code>
+        tag. Web devlopment becomes complex when choosing the positioning of divs and ensuring that the flow of web page isn't awkward.
+    </p>
+    <h3>Adding Images</h3>
+    <p>Any modern day website uses images so we will use them too. Lets start by creating a folder called images. Add the image of your choice,
+        can be a headshot or any random picture that you like, to your folder(you can drag and drop). </p>
+        <p>Now back in our HTML file, we will create a image tag right above the heading with our name <code>&ltimg src="images/placeholder"&gt</code> and replace the 
+            placeholder with the file path of the image. If you need help with this let me know. To add an image to a repl, upload the image from your computer. Depending 
+            on how your image is saved, you may need to use a file converter (google an image converter).
+    </p>
+    <p>Depending on the image you have used, the size of the image can differ greatly based on the image's original dimensions or resolution. We can use in-line styling to
+        limit the height and width of our image. <code>&ltimg src="images/placeholder" style="border-radius: 100%"&gt</code>. This makes our image circular which fits if you
+        decided to use a headshot. Other ways of styling images is by editing their height or width. 
+    </p>
+    <p>Feel free to google styling for any of the tags used so far. You can also make your image smaller or larger depending on what is necessary for your webpage.</p>
+    <p>If you would like to add more images of yourself playing sports or pets or anything of interest feel free to rinse and repeat. The placement of your images will drastically 
+        change the format of your webpage.
+    </p>
+    </div>
+      </div>
+
+    </main>
+  </body>
+</html>
